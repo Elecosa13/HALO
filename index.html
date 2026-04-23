@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HALO — Light. Built to Last.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">HALO</a>
+      <ul class="nav-links">
+        <li><a href="#products">Produits</a></li>
+        <li><a href="#values">Valeurs</a></li>
+        <li><a href="#b2b">Professionnels</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#products" class="mm-link">Produits</a>
+    <a href="#values" class="mm-link">Valeurs</a>
+    <a href="#b2b" class="mm-link">Professionnels</a>
+    <a href="#contact" class="mm-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-logo-wrap">
+        <div class="logo-halo">HALO</div>
+        <div class="logo-rule"></div>
+      </div>
+      <p class="hero-slogan">LIGHT. BUILT TO LAST.</p>
+      <p class="hero-sub">Éclairage LED premium — Genève, Suisse</p>
+      <a href="#contact" class="btn-primary">Demander un devis</a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label">Notre gamme</span>
+        <h2>Solutions d'éclairage</h2>
+        <p class="section-desc">Des produits conçus pour durer, des espaces résidentiels aux projets architecturaux les plus exigeants.</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="20" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 30v8M19 36h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 20H8M40 20h-6M17.5 12.5l-4-4M30.5 12.5l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Spots LED</h3>
+          <p>Spots encastrables et orientables pour une mise en lumière précise. IRC 90+, rendu chromatique exceptionnel.</p>
+          <div class="card-detail">
+            <span>IRC 90+</span>
+            <span>2700K – 4000K</span>
+            <span>50 000h</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="20" width="36" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 20v-4M24 20v-6M34 20v-4M14 28v4M24 28v6M34 28v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Bandes LED</h3>
+          <p>Bandes flexibles haute densité pour éclairages indirects, corniches et ambiances architecturales.</p>
+          <div class="card-detail">
+            <span>IP20 / IP67</span>
+            <span>RGB + CCT</span>
+            <span>24V DC</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8v4M8 24h4M36 24h4M12.7 12.7l2.8 2.8M32.5 15.5l2.8-2.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 36l-4 4M32 36l4 4M20 38h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Éclairage extérieur</h3>
+          <p>Luminaires IP65 à IP68 pour façades, jardins et espaces publics. Résistance aux conditions alpines.</p>
+          <div class="card-detail">
+            <span>IP65 – IP68</span>
+            <span>IK10</span>
+            <span>-30°C / +50°C</span>
+          </div>
+        </div>
+
+        <div class="product-card product-card--featured">
+          <div class="product-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="26" y="8" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="8" y="26" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="26" y="26" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Solutions professionnelles</h3>
+          <p>Études lumières, systèmes DALI/KNX, contrôle centralisé. Conception sur-mesure pour projets complexes.</p>
+          <div class="card-detail">
+            <span>DALI / KNX</span>
+            <span>Sur mesure</span>
+            <span>Étude offerte</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section id="values">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label">Notre engagement</span>
+        <h2>L'excellence à chaque détail</h2>
+      </div>
+      <div class="values-grid">
+
+        <div class="value-item">
+          <div class="value-num">01</div>
+          <h3>Qualité</h3>
+          <p>Composants sélectionnés selon les standards les plus rigoureux. Chaque produit HALO est testé avant livraison.</p>
+        </div>
+
+        <div class="value-item">
+          <div class="value-num">02</div>
+          <h3>Durabilité</h3>
+          <p>50 000 heures de fonctionnement garanti. Conçu pour s'intégrer durablement dans votre architecture.</p>
+        </div>
+
+        <div class="value-item">
+          <div class="value-num">03</div>
+          <h3>Précision</h3>
+          <p>Température de couleur calibrée, flux lumineux contrôlé, éblouissement maîtrisé. La lumière exacte qu'il vous faut.</p>
+        </div>
+
+        <div class="value-item">
+          <div class="value-num">04</div>
+          <h3>Installation professionnelle</h3>
+          <p>Notre réseau d'électriciens certifiés assure une mise en œuvre parfaite, dans les règles de l'art.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B -->
+  <section id="b2b">
+    <div class="section-inner b2b-inner">
+      <div class="b2b-text">
+        <span class="label label--light">Espace professionnel</span>
+        <h2>Partenaires & Installateurs</h2>
+        <p>HALO s'adresse aux électriciens agréés, aux régies immobilières et aux architectes d'intérieur qui exigent des produits à la hauteur de leurs projets.</p>
+        <ul class="b2b-list">
+          <li>
+            <div class="b2b-check"></div>
+            <span>Tarifs préférentiels pour professionnels certifiés</span>
+          </li>
+          <li>
+            <div class="b2b-check"></div>
+            <span>Support technique dédié et réponse sous 24h</span>
+          </li>
+          <li>
+            <div class="b2b-check"></div>
+            <span>Études lumières et plans d'implantation offerts</span>
+          </li>
+          <li>
+            <div class="b2b-check"></div>
+            <span>Stock disponible à Genève — livraison J+1</span>
+          </li>
+        </ul>
+        <a href="#contact" class="btn-primary btn-primary--light">Devenir partenaire</a>
+      </div>
+      <div class="b2b-visual">
+        <div class="b2b-card">
+          <div class="b2b-stat">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Projets réalisés</div>
+          </div>
+          <div class="b2b-divider"></div>
+          <div class="b2b-stat">
+            <div class="stat-num">12</div>
+            <div class="stat-label">Années d'expérience</div>
+          </div>
+          <div class="b2b-divider"></div>
+          <div class="b2b-stat">
+            <div class="stat-num">98%</div>
+            <div class="stat-label">Satisfaction client</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">HALO</div>
+        <p class="footer-slogan">Light. Built to Last.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <a href="mailto:info@halo-light.ch">info@halo-light.ch</a>
+        <a href="tel:+41229999999">+41 22 999 99 99</a>
+        <p>Genève, Suisse</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <a href="#products">Produits</a>
+        <a href="#values">Valeurs</a>
+        <a href="#b2b">Professionnels</a>
+      </div>
+      <div class="footer-form">
+        <h4>Demande rapide</h4>
+        <form id="contactForm">
+          <input type="text" placeholder="Votre nom" required />
+          <input type="email" placeholder="Email professionnel" required />
+          <textarea placeholder="Votre projet en quelques mots..." rows="3"></textarea>
+          <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HALO SA — Genève, Suisse</span>
+      <span>Éclairage LED Premium</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
