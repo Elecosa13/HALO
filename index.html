@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="src/components/halo-logo.css" />
 </head>
 <body>
 
@@ -37,11 +38,16 @@
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-inner">
-      <div class="hero-logo-wrap">
-        <div class="logo-halo">HALO</div>
-        <div class="logo-rule"></div>
+    <div class="hero-title-layer">
+      <div class="halo-logo">
+        <svg viewBox="0 0 200 120">
+          <ellipse cx="100" cy="50" rx="70" ry="25" class="halo-ring"/>
+          <line x1="100" y1="50" x2="100" y2="80" class="halo-line"/>
+        </svg>
+        <div class="halo-text">HALO</div>
       </div>
+    </div>
+    <div class="hero-inner">
       <p class="hero-slogan">LIGHT. BUILT TO LAST.</p>
       <p class="hero-sub">Éclairage LED premium — Genève, Suisse</p>
       <a href="#contact" class="btn-primary">Demander un devis</a>

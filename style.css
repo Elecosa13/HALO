@@ -214,14 +214,14 @@ img { display: block; max-width: 100%; }
 
 /* ─── HERO ─────────────────────────────────────────────────── */
 #hero {
+  min-height: 100vh;
   min-height: 100svh;
   background: var(--dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 /* subtle radial glow */
@@ -237,17 +237,28 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
+.hero-title-layer {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 0;
-  z-index: 1;
+  margin: 0;
+  padding: clamp(220px, 30vh, 320px) 24px 0;
+  z-index: 2;
 }
 
 .hero-logo-wrap {
-  margin-bottom: 32px;
+  margin: 0;
 }
 
 .logo-halo {
@@ -256,7 +267,8 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.35em;
   color: var(--white);
   line-height: 1;
-  padding-right: 0.35em; /* compensate letter-spacing */
+  margin: 0;
+  padding: 0;
 }
 
 .logo-rule {
@@ -733,5 +745,6 @@ footer h4 {
 }
 
 @media (max-width: 480px) {
-  .logo-halo { letter-spacing: 0.2em; padding-right: 0.2em; }
+  .logo-halo { letter-spacing: 0.2em; }
+  .hero-inner { padding-top: clamp(180px, 28vh, 240px); }
 }
