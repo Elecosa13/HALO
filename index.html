@@ -38,19 +38,39 @@
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-title-layer">
-      <div class="halo-logo">
-        <svg viewBox="0 0 200 120">
-          <ellipse cx="100" cy="50" rx="70" ry="25" class="halo-ring"/>
-          <line x1="100" y1="50" x2="100" y2="80" class="halo-line"/>
+    <div class="hero-content">
+      <div class="halo-logo-mark" aria-label="HALO">
+        <svg class="halo-symbol" viewBox="0 0 220 220" role="img">
+          <!-- Arc principal — effilé aux deux bouts via stroke-linecap round -->
+          <path
+            class="halo-arc halo-arc-main"
+            d="M134 42 A72 72 0 1 0 92 178"
+            stroke-linecap="round"
+          />
+          <!-- Arc secondaire -->
+          <path
+            class="halo-arc halo-arc-secondary"
+            d="M152 80 A72 72 0 0 1 130 178"
+            stroke-linecap="round"
+          />
+          <!-- Ligne centrale — losange effilé -->
+          <polygon
+            class="halo-blade halo-blade-main"
+            points="110,102 112.5,127 110,152 107.5,127"
+          />
+          <!-- Petite ligne basse — losange effilé -->
+          <polygon
+            class="halo-blade halo-blade-small"
+            points="110,168 111.5,179 110,190 108.5,179"
+          />
         </svg>
-        <div class="halo-text">HALO</div>
+        <div class="halo-word">HALO</div>
+        <div class="halo-tagline">LIGHT. BUILT TO LAST.</div>
       </div>
-    </div>
-    <div class="hero-inner">
-      <p class="hero-slogan">LIGHT. BUILT TO LAST.</p>
-      <p class="hero-sub">Éclairage LED premium — Genève, Suisse</p>
-      <a href="#contact" class="btn-primary">Demander un devis</a>
+
+      <p class="hero-subtitle">Éclairage LED premium — Genève, Suisse</p>
+
+      <a class="btn-primary hero-cta" href="#contact">DEMANDER UN DEVIS</a>
     </div>
     <div class="hero-scroll" aria-hidden="true">
       <span></span>

@@ -1,60 +1,116 @@
-.halo-logo {
-  display: flex;
+.halo-logo-mark {
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #f2efe8;
 }
 
-.halo-logo svg {
-  width: clamp(180px, 36vw, 380px);
+.halo-symbol {
+  width: min(360px, 55vw);
   height: auto;
+  overflow: visible;
 }
 
-.halo-ring {
+.halo-arc {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.88);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+}
+
+.halo-center-line,
+.halo-small-line {
   fill: none;
   stroke: #f2efe8;
-  stroke-width: 2;
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400;
-  animation: draw 2s ease forwards, glow 3s ease-in-out infinite;
+  stroke-width: 5;
+  stroke-linecap: round;
+  filter:
+    drop-shadow(0 0 4px rgba(242, 239, 232, 0.45))
+    drop-shadow(0 0 16px rgba(242, 239, 232, 0.18));
 }
 
-.halo-line {
-  stroke: #f2efe8;
-  stroke-width: 2;
+.halo-arc-main,
+.halo-arc-secondary {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  animation: halo-draw 1.8s ease forwards, halo-glow 3.8s ease-in-out infinite;
+}
+
+.halo-arc-secondary {
+  animation-delay: 0.25s, 2s;
+}
+
+.halo-center-line {
   opacity: 0;
-  animation: fadeIn 1s ease forwards 1.5s;
+  animation: halo-fade 0.8s ease forwards 1.3s, halo-glow 3.8s ease-in-out infinite 2s;
 }
 
-.halo-text {
-  margin-top: 20px;
-  color: #f2efe8;
-  letter-spacing: 0.35em;
-  font-size: clamp(72px, 14vw, 140px);
+.halo-small-line {
+  opacity: 0;
+  animation: halo-fade 0.8s ease forwards 1.6s, halo-glow 3.8s ease-in-out infinite 2.2s;
+}
+
+.halo-blade {
+  fill: rgba(255, 255, 255, 0.85);
+  filter: blur(0.4px);
+  opacity: 0;
+  animation: halo-fade 0.8s ease forwards 1.3s;
+}
+
+.halo-blade-main {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+}
+
+.halo-blade-small {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
+  animation-delay: 1.6s;
+}
+
+.halo-word {
+  margin-top: 18px;
+  font-size: clamp(52px, 8vw, 96px);
   font-weight: 300;
-  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.28em;
   line-height: 1;
+  color: #f2efe8;
   opacity: 0;
-  animation: fadeIn 1s ease forwards 2s;
+  animation: halo-fade 0.9s ease forwards 1.9s;
 }
 
-@keyframes draw {
+.halo-tagline {
+  margin-top: 22px;
+  font-size: clamp(10px, 1.4vw, 15px);
+  font-weight: 300;
+  letter-spacing: 0.42em;
+  color: rgba(242, 239, 232, 0.78);
+  opacity: 0;
+  animation: halo-fade 0.9s ease forwards 2.2s;
+}
+
+@keyframes halo-draw {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-@keyframes glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 2px #f2efe8);
-  }
-  50% {
-    filter: drop-shadow(0 0 12px #f2efe8);
+@keyframes halo-fade {
+  to {
+    opacity: 1;
   }
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
+@keyframes halo-glow {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 3px rgba(242, 239, 232, 0.35))
+      drop-shadow(0 0 10px rgba(242, 239, 232, 0.12));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 7px rgba(242, 239, 232, 0.6))
+      drop-shadow(0 0 22px rgba(242, 239, 232, 0.24));
   }
 }
