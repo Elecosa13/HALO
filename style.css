@@ -614,8 +614,68 @@ img, svg { display: block; max-width: 100%; }
   border-top: 1px solid rgba(244,232,208,0.08);
 }
 
+#led-cob,
+#led-freecut,
+#led-piscine,
+#led-rgb {
+  position: relative;
+  padding: 104px 0;
+  background:
+    radial-gradient(circle at top center, rgba(244,232,208,0.06), transparent 34%),
+    linear-gradient(180deg, #131210 0%, #11100f 100%);
+  border-top: 1px solid rgba(244,232,208,0.08);
+}
+
 #led-standard .section-desc {
   max-width: 760px;
+}
+
+.family-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.family-preview-card {
+  padding: 28px 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(30,27,24,0.92), rgba(17,16,15,0.98));
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.family-kicker {
+  color: var(--accent-strong);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.family-preview-card h3 {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.family-preview-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.family-note {
+  margin-top: 18px;
+  color: var(--text-dim);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
 }
 
 .standard-variant-links {
@@ -1366,6 +1426,10 @@ footer h4 {
     grid-template-columns: 1fr;
   }
 
+  .family-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
   .standard-media {
     position: relative;
     top: 0;
@@ -1435,6 +1499,10 @@ footer h4 {
   .standard-tech-grid,
   .standard-list,
   .standard-data-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .family-preview-grid {
     grid-template-columns: 1fr;
   }
 
