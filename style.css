@@ -516,11 +516,12 @@ img, svg { display: block; max-width: 100%; }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
 }
 
 .product-card {
+  position: relative;
   min-height: 100%;
   padding: 34px 30px;
   border: 1px solid rgba(23,19,13,0.12);
