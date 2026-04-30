@@ -7,13 +7,21 @@ export default function HaloLogo() {
         <path
           className="halo-arc halo-arc-main"
           d="M134 42 A72 72 0 1 0 92 178"
+          strokeLinecap="round"
         />
         <path
           className="halo-arc halo-arc-secondary"
           d="M152 80 A72 72 0 0 1 130 178"
+          strokeLinecap="round"
         />
-        <line className="halo-center-line" x1="110" y1="105" x2="110" y2="150" />
-        <line className="halo-small-line" x1="110" y1="170" x2="110" y2="190" />
+        <polygon
+          className="halo-blade halo-blade-main"
+          points="110,102 112.5,127 110,152 107.5,127"
+        />
+        <polygon
+          className="halo-blade halo-blade-small"
+          points="110,168 111.5,179 110,190 108.5,179"
+        />
       </svg>
 
       <div className="halo-word">HALO</div>
